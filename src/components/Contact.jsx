@@ -10,7 +10,7 @@ export const Contact = () => {
   return(
     <>
       {/* お問い合わせ */}
-      <Fade direction={"up"}>
+      <Fade direction={"down"}>
       <div id="contact">
         <div className="container mx-auto max-w-5xl lg:py-20 py-5 lg:mt-10">
           <h4 className="text-center lg:text-3xl text-2xl font-bold text-gray-600">{t('contact.title')}</h4>

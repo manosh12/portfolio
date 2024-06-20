@@ -48,10 +48,11 @@ export const Home = () => {
       <div className="container mx-auto max-w-6xl text-gray-600">
         <div className="flex flex-col sm:grid sm:grid-cols-2 gap-20 mx-5 lg:mt-14">
           {/* Image section */}
-          <div className="order-1 sm:order-2 flex justify-center items-center mt-10 sm:mt-0">
-            <img src="/images/bg_hero.jpg" alt="business-exchange" className="w-full sm:w-auto"/>
-          </div>
-
+            <div className="order-1 sm:order-2 flex justify-center items-center mt-10 sm:mt-0">
+              <Fade direction={"right"}>
+                <img src="/images/main.jpg" alt="business-exchange" className="w-full sm:w-auto"/>
+              </Fade>
+            </div>
           {/* Content section */}
           <div className="order-2 sm:order-1 sm:mt-20">
             <Fade direction={'left'}><h1 className="lg:text-4xl text-2xl font-bold">{t('main.title')}</h1></Fade>
@@ -103,7 +104,7 @@ export const Home = () => {
 
 
         {showArrow && (
-          <Link to="/#business_exchange" className="hidden lg:block">
+          <Link to="/#about" className="hidden lg:block">
             <div className="flex justify-center items-end">
               <FaArrowDownLong
                 className="text-gray-600 text-2xl lg:text-3xl font-thin mb-2 animate-moveUpDown absolute bottom-8"/>

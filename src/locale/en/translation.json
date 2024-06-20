@@ -27,7 +27,18 @@
   },
 
   "skill": {
-    "title": "SKILL"
+    "title": "SKILL",
+    "php": "More than 3 years",
+    "laravel": "More than 1 year",
+    "react": "More than 1 year",
+    "vue": "More than half a year",
+    "bootstrap": "More than 3 years",
+    "tailwind": "More than half a year",
+    "html": "More than 5 years",
+    "css": "More than 5 years",
+    "gitlab": "More than 4 years",
+    "github": "More than 2 years",
+    "server": "More than half a year"
   },
 
   "collage_background": {

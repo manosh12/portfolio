@@ -1,6 +1,6 @@
 import data from "../data/data.json";
 import '../App.css';
-import {Card, CardBody, CardHeader, Progress} from "@nextui-org/react";
+import {Card, CardBody, CardHeader, Progress, Tooltip} from "@nextui-org/react";
 import {Fade} from "react-awesome-reveal";
 import {useTranslation} from "react-i18next";
 
@@ -47,16 +47,36 @@ export const About = () => {
             <h4 className="text-center lg:text-3xl text-xl">{t('skill.title')}</h4>
             <Fade direction={"up"}>
               <div className="grid grid-cols-5 lg:grid-cols-10 mt-7 gap-5 mx-5">
-                <img src="/images/php.svg" className="w-14 h-14"/>
-                <img src="/images/laravel.svg" className="w-12 h-12"/>
-                <img src="/images/react.svg" className="w-12 h-12"/>
-                <img src="/images/vue.svg" className="w-12 h-12"/>
-                <img src="/images/bootstrap.svg" className="w-12 h-12"/>
-                <img src="/images/html.svg" className="w-12 h-12"/>
-                <img src="/images/css.svg" className="w-12 h-12"/>
-                <img src="/images/github.svg" className="w-12 h-12"/>
-                <img src="/images/gitlab.svg" className="w-12 h-12"/>
-                <img src="/images/linux.svg" className="w-12 h-12"/>
+                <Tooltip showArrow={true} content={t('skill.php')}>
+                  <img src="/images/php.svg" className="w-14 h-14"/>
+                </Tooltip>
+                <Tooltip showArrow={true} content={t('skill.laravel')}>
+                  <img src="/images/laravel.svg" className="w-12 h-12"/>
+                </Tooltip>
+                <Tooltip showArrow={true} content={t('skill.react')}>
+                  <img src="/images/react.svg" className="w-12 h-12"/>
+                </Tooltip>
+                <Tooltip showArrow={true} content={t('skill.vue')}>
+                  <img src="/images/vue.svg" className="w-12 h-12"/>
+                </Tooltip>
+                <Tooltip showArrow={true} content={t('skill.html')}>
+                  <img src="/images/html.svg" className="w-12 h-12"/>
+                </Tooltip>
+                <Tooltip showArrow={true} content={t('skill.css')}>
+                  <img src="/images/css.svg" className="w-12 h-12"/>
+                </Tooltip>
+                <Tooltip showArrow={true} content={t('skill.bootstrap')}>
+                  <img src="/images/bootstrap.svg" className="w-12 h-12"/>
+                </Tooltip>
+                <Tooltip showArrow={true} content={t('skill.tailwind')}>
+                  <img src="/images/tailwind.png" className="w-12 h-12"/>
+                </Tooltip>
+                <Tooltip showArrow={true} content={t('skill.gitlab')}>
+                  <img src="/images/github.svg" className="w-12 h-12"/>
+                </Tooltip>
+                <Tooltip showArrow={true} content={t('skill.server')}>
+                  <img src="/images/linux.svg" className="w-12 h-12"/>
+                </Tooltip>
               </div>
             </Fade>
           </div>

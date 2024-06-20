@@ -24,3 +24,18 @@ html {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+/* Define the keyframes for the up-down animation */
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0); /* Start at original position */
+    }
+    50% {
+        transform: translateY(-15px); /* Move up by 10px */
+    }
+}
+
+/* Create a class to apply the animation */
+.animate-moveUpDown {
+    animation: moveUpDown 1.5s ease-in-out infinite; /* Duration, easing, and infinite loop */
+}

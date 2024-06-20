@@ -26,6 +26,21 @@
     "name": "プン・マノス"
   },
 
+  "skill": {
+    "title": "SKILL",
+    "php": "3年以上",
+    "laravel": "1年以上",
+    "react": "1年以上",
+    "vue": "半年以上",
+    "bootstrap": "3年以上",
+    "tailwind": "半年以上",
+    "html": "5年以上",
+    "css": "5年以上",
+    "gitlab": "4年以上",
+    "github": "2年以上",
+    "server": "半年以上"
+  },
+
   "collage_background": {
     "title": "学歴",
     "collage": "専門学校 九州英数学館（IT-Web コース）",
