@@ -1,0 +1,61 @@
+{
+  "Navbar": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "skill": "SKILL",
+    "contact": "CONTACT"
+  },
+
+  "main": {
+    "title": "HI I`M MANOSH PUN",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s .",
+    "button": "CONTACT ME"
+  },
+
+  "weDo": {
+    "system": "Web System Developement",
+    "site": "Web Site Developement",
+    "server": "Server Construction"
+  },
+
+  "about": {
+    "title": "ABOUT",
+    "sub_title": "INTRODUCING",
+    "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.",
+    "second_description": "It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.",
+    "name": "PUN MANOSH"
+  },
+
+  "skill": {
+    "title": "SKILL"
+  },
+
+  "collage_background": {
+    "title": "COLLEGE HISTORY",
+    "collage": "Kyushu Eisu Senmon Gakko (IT-Web course)",
+    "graduated": "March 2020 (Graduation)",
+    "programing": "Programing Language",
+    "other": "Other"
+  },
+
+  "contact": {
+    "title" : "CONTACT US",
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+    "phone": "PHONE",
+    "address_title": "ADDRESS",
+    "address": "Fukuoka 2-chome, Chuo-ku, Fukuoka City",
+    "email": "EMAIL"
+  },
+
+  "footer": {
+    "logo_title": "How can we help you. get in touch",
+    "description": "To ensure that all Wikipedia content is verifiable, anyone may question an uncited claim. If your work has been tagged",
+    "button": "CONTACT US"
+  },
+
+  "not-found": {
+    "title": "- Not Found",
+    "description": "Sorry, the page you are looking for could not be found.",
+    "backLink": "Back"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "collageLearnedLanguage": [
+    {
+      "id": 1,
+      "title": "Javascript",
+      "img": "/images/js.svg"
+    },
+    {
+      "id": 2,
+      "title": "PHP",
+      "img": "/images/php.svg"
+    },
+    {
+      "id": 3,
+      "title": "HTML5",
+      "img": "/images/html.svg"
+    },
+    {
+      "id": 4,
+      "title": "CSS3",
+      "img": "/images/css.svg"
+    }
+  ],
+
+  "other": [
+    {
+      "id": 1,
+      "title": "Photoshop",
+      "img": "/images/photoshop.svg"
+    },
+    {
+      "id": 2,
+      "title": "Illustrator",
+      "img": "/images/illustrator.svg"
+    },
+    {
+      "id": 3,
+      "title": "Excel",
+      "img": "/images/excel.svg"
+    },
+    {
+      "id": 4,
+      "title": "Word Office",
+      "img": "/images/word.svg"
+    }
+  ]
+}
