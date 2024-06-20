@@ -10,13 +10,13 @@ export const Contact = () => {
   return(
     <>
       {/* お問い合わせ */}
+      <Fade direction={"up"}>
       <div id="contact">
         <div className="container mx-auto max-w-5xl lg:py-20 py-5 lg:mt-10">
           <h4 className="text-center lg:text-3xl text-2xl font-bold text-gray-600">{t('contact.title')}</h4>
           <div className="mt-10">
             <div className="bg-[#f0f5f7] py-10 text-gray-600 text-center px-5 rounded-md">{t('contact.description')}</div>
           </div>
-          <Fade direction={"up"}>
             <div className="text-center mt-10">
               <div className="grid sm:grid-cols-3 gap-10 mx-5 mt-10">
                 {/*Fax*/}
@@ -63,9 +63,9 @@ export const Contact = () => {
                 </div>
               </div>
             </div>
-          </Fade>
         </div>
       </div>
+      </Fade>
     </>
   )
 }
