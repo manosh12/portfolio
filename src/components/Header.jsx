@@ -28,6 +28,7 @@ export const Header = () => {
     { name: t('Navbar.contact'), link: "/#contact" },
   ];
 
+  console.log(language);
   const handleMenuClose = () => {
     setIsMenuOpen(false);
   };
@@ -46,7 +47,7 @@ export const Header = () => {
         <NavbarBrand>
           <Link to="/" onClick={TopScroll}>
             <div className="flex justify-start items-start gap-2">
-              <img src="/images/logo.png" alt="logo" className="w-10 h-auto" />
+              <img src="/images/logo.svg" alt="logo" className="w-10 h-auto" />
               <h4 className="font-bold text-lg mt-2">P<span className="text-warning">U</span>N</h4>
             </div>
           </Link>
@@ -66,13 +67,12 @@ export const Header = () => {
           <Dropdown>
             <DropdownTrigger>
               <Button
-                variant="bordered"
-                className="flex items-center text-sm border-1 text-gray-600"
+                className="flex items-center text-sm border-1 text-gray-600 bg-white border-white font-bold"
                 aria-label="Select language"
                 radius="sm"
               >
-                <FaGlobe size={20} />
-                {language === "en" ? "English" : "日本語"}
+                {/*<FaGlobe size={20} />*/}
+                {language === "en" ? "🇺🇸 ENG" : language === "jp" ? "🇯🇵 JP" : "🇳🇵 NPL"}
               </Button>
             </DropdownTrigger>
             <DropdownMenu
@@ -83,12 +83,17 @@ export const Header = () => {
             >
               <DropdownItem key="en">
                 <div className="flex items-center">
-                  English
+                  🇺🇸 ENG
                 </div>
               </DropdownItem>
               <DropdownItem key="jp">
                 <div className="flex items-center">
-                  日本語
+                  🇯🇵 JP
+                </div>
+              </DropdownItem>
+              <DropdownItem key="np">
+                <div className="flex items-center">
+                  🇳🇵 NPL
                 </div>
               </DropdownItem>
             </DropdownMenu>
@@ -126,7 +131,7 @@ export const Header = () => {
                 radius="none"
               >
                 <FaGlobe className="mr-2" size={20} />
-                {language === "en" ? "English" : "日本語"}
+                {language === "en" ? "🇺🇸 ENG" : language === "jp" ? "🇯🇵 JP" : "🇳🇵 NPL"}
               </Button>
             </DropdownTrigger>
             <DropdownMenu
@@ -136,12 +141,17 @@ export const Header = () => {
             >
               <DropdownItem key="en">
                 <div className="flex items-center">
-                  English
+                  🇺🇸 ENG
                 </div>
               </DropdownItem>
               <DropdownItem key="jp">
                 <div className="flex items-center">
-                  日本語
+                  🇯🇵 JP
+                </div>
+              </DropdownItem>
+              <DropdownItem key="np">
+                <div className="flex items-center">
+                  🇳🇵 NPL
                 </div>
               </DropdownItem>
             </DropdownMenu>

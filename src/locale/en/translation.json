@@ -7,10 +7,12 @@
   },
 
   "main": {
-    "title": "HI I`M MANOSH PUN",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s .",
+    "title": "HI, I'M MANOSH PUN",
+    "description": "I am a WEB DEVELOPER.",
+    "sub_description": "I have four years of experience as a web developer.",
     "button": "CONTACT ME"
   },
+
 
   "weDo": {
     "system": "Web System Developement",
@@ -20,7 +22,6 @@
 
   "about": {
     "title": "ABOUT",
-    "sub_title": "INTRODUCING",
     "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.",
     "second_description": "It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.",
     "name": "PUN MANOSH"
@@ -51,7 +52,7 @@
 
   "contact": {
     "title" : "CONTACT US",
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+    "description": "I am currently open to new opportunities and collaborations. Let's connect to discuss how my skills and experience can contribute to your projects.",
     "phone": "PHONE",
     "address_title": "ADDRESS",
     "address": "Fukuoka 2-chome, Chuo-ku, Fukuoka City",
@@ -60,7 +61,6 @@
 
   "footer": {
     "logo_title": "How can we help you. get in touch",
-    "description": "To ensure that all Wikipedia content is verifiable, anyone may question an uncited claim. If your work has been tagged",
     "button": "CONTACT US"
   },
 

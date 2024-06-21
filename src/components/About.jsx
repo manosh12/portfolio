@@ -3,6 +3,7 @@ import '../App.css';
 import {Card, CardBody, CardHeader, Progress, Tooltip} from "@nextui-org/react";
 import {Fade} from "react-awesome-reveal";
 import {useTranslation} from "react-i18next";
+import {Title} from "./Title.jsx";
 
 export const About = () => {
   const collageLearnedLanguage = data.collageLearnedLanguage;
@@ -11,29 +12,27 @@ export const About = () => {
 
   return (
     <>
-      <div className="mt-60" id="about">
+      <div className="lg:mt-60 mt-28" id="about">
         <div className="container mx-auto max-w-5xl">
           <div className="mt-5 mx-5">
-            <h3 className="text-center font-bold lg:text-3xl text-xl text-gray-600">{t('about.title')}</h3>
+            <Title title={t('about.title')} />
           </div>
 
           {/*紹介 */}
           <div className="grid sm:grid-cols-2 gap-20 mx-5 mt-20">
-            <div className="mt-1">
-              <div className="order-1 sm:order-2 flex justify-center items-center mt-10 sm:mt-0">
+            <div className="lg:mt-1">
+              <div className="order-1 sm:order-2 flex justify-center items-center sm:mt-0">
                 <img src="/images/bg_hero.jpg" alt="business-exchange" className="w-full sm:w-auto"/>
               </div>
             </div>
 
             <div className="mx-2">
-              <h4 className="lg:text-2xl text-xl font-bold text-gray-600 text-center">{t('about.sub_title')}</h4>
-              <hr className="border-1 border-cyan-600 my-3 w-full"/>
-              <div className="mt-5">
+              <div className="lg:mt-5">
                 <h1 className="text-md text-gray-600">
                   {t('about.description')}
                   <p className="my-5">{t('about.second_description')}</p>
                   <Fade direction={"right"}>
-                    <p className="my-5 text-lg font-bold float-end">{t('about.name')}</p>
+                    <p className="lg:mt-5 text-lg font-bold float-end">{t('about.name')}</p>
                   </Fade>
                 </h1>
               </div>
@@ -42,9 +41,9 @@ export const About = () => {
         </div>
 
         {/*Skill */}
-        <div className="bg-[#f0f5f7] mt-20 relative" id="skill">
-          <div className="container mx-auto max-w-5xl py-20 text-gray-600">
-            <h4 className="text-center lg:text-3xl text-xl">{t('skill.title')}</h4>
+        <div className="bg-[#f0f5f7] lg:mt-20 mt-10 relative" id="skill">
+          <div className="container mx-auto max-w-5xl py-10 pb-20 text-gray-600">
+            <Title title={t('skill.title')} />
             <Fade direction={"up"}>
               <div className="grid grid-cols-5 lg:grid-cols-10 mt-7 gap-5 mx-5">
                 <Tooltip showArrow={true} content={t('skill.php')}>
@@ -84,8 +83,8 @@ export const About = () => {
 
         {/*progress*/}
         <div className="container mx-auto max-w-5xl">
-          <div className="grid sm:grid-cols-2 gap-20 mx-5 mt-20">
-            <div className="mx-2">
+          <div className="grid sm:grid-cols-2 gap-20 mx-5 mt-5">
+            <div className="mx-2 lg:mt-20 mt-10">
               <Progress className="my-3"
                         size="md"
                         radius="sm"
@@ -97,7 +96,7 @@ export const About = () => {
                           value: "text-foreground/60"
                         }}
                         label="PHP"
-                        value={65}
+                        value={70}
                         showValueLabel={true}
               />
               <Progress className="my-3"
@@ -111,7 +110,7 @@ export const About = () => {
                           value: "text-foreground/60"
                         }}
                         label="JavaScript"
-                        value={75}
+                        value={50}
                         showValueLabel={true}
               />
               <Progress className="my-3"
@@ -125,7 +124,7 @@ export const About = () => {
                           value: "text-foreground/60"
                         }}
                         label="Laravel"
-                        value={80}
+                        value={70}
                         showValueLabel={true}
               />
               <Progress className="my-3"
@@ -139,7 +138,7 @@ export const About = () => {
                           value: "text-foreground/60"
                         }}
                         label="Vue"
-                        value={85}
+                        value={50}
                         showValueLabel={true}
               />
               <Progress className="my-3"
@@ -153,7 +152,7 @@ export const About = () => {
                           value: "text-foreground/60"
                         }}
                         label="React JS"
-                        value={90}
+                        value={60}
                         showValueLabel={true}
               />
               <Progress className="my-3"
@@ -166,24 +165,24 @@ export const About = () => {
                           label: "tracking-wider font-medium text-default-600",
                           value: "text-foreground/60"
                         }}
-                        label="Tailwind CSS"
-                        value={95}
+                        label="Server"
+                        value={50}
                         showValueLabel={true}
               />
             </div>
-            <div>
+            <div className="lg:mt-16">
               <img src="/images/bg_hero.jpg" className="w-full sm:w-auto"/>
             </div>
           </div>
         </div>
 
         {/*Collage History*/}
-        <div className="container mx-auto max-w-5xl py-20 text-gray-600 mt-20">
-          <h4 className="text-center lg:text-3xl font-bold text-xl">{t('collage_background.title')}</h4>
+        <div className="container mx-auto max-w-5xl py-20 text-gray-600 lg:mt-7 mt-5">
+          <Title title={t('collage_background.title')} />
           <h4 className="text-center text-lg mt-5">{t('collage_background.collage')}</h4>
           <h4 className="text-center text-lg">{t('collage_background.graduated')}</h4>
-          <h4 className="font-bold text-lg uppercase mx-5 my-5">{t('collage_background.programing')}</h4>
-          <div className="grid grid-cols-2 lg:grid-cols-4 mt-10 gap-5 mx-5">
+          <h4 className="font-bold text-lg uppercase mx-5 mt-10 lg:text-start text-center">{t('collage_background.programing')}</h4>
+          <div className="grid grid-cols-2 lg:grid-cols-4 mt-5 gap-5 mx-5">
             {collageLearnedLanguage.map((contentList, index) => (
               <Fade
                 key={index}
@@ -205,8 +204,8 @@ export const About = () => {
             ))}
           </div>
 
-          <h4 className="font-bold text-lg uppercase mx-5 mt-20">{t('collage_background.other')}</h4>
-          <div className="grid grid-cols-2 lg:grid-cols-4 mt-10 gap-5 mx-5">
+          <h4 className="font-bold text-lg uppercase mx-5 mt-10 lg:text-start text-center">{t('collage_background.other')}</h4>
+          <div className="grid grid-cols-2 lg:grid-cols-4 mt-5 gap-5 mx-5">
             {other.map((contentList, index) => (
               <Fade
                 key={index}

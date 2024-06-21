@@ -3,6 +3,7 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import english from './locale/en/translation.json';
 import japanese from './locale/jp/translation.json';
+import nepal from './locale/np/translation.json';
 
 i18n
   .use(LanguageDetector)
@@ -11,8 +12,9 @@ i18n
     resources: {
       en: { translation: english },
       jp: { translation: japanese },
+      np: { translation: nepal },
     },
-    fallbackLng: 'en',
+    fallbackLng: 'jp',
     detection: {
       order: ['localStorage', 'navigator'],
       caches: ['localStorage', 'cookie'],
