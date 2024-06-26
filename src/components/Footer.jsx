@@ -11,7 +11,7 @@ export const Footer = () => {
     <>
       {/*フッター*/}
       <footer className="relative bg-black">
-        <div className="w-full h-auto py-20 flex items-center justify-center bg-black">
+        <div className="w-full h-auto lg:py-20 py-10 flex items-center justify-center bg-black">
           <div className="md:w-2/3 w-full px-4 text-white flex flex-col">
             <Link to="/" onClick={TopScroll}>
               <div className="flex justify-start items-start gap-2">
@@ -19,14 +19,14 @@ export const Footer = () => {
                 <h4 className="font-bold text-lg mt-2">P<span className="text-warning">U</span>N</h4>
               </div>
             </Link>
-            <div className="flex mt-8 flex-col md:flex-row md:justify-between">
-              <div className="w-full lg:text-2xl font-bold mt-10">
+            <div className="flex lg:mt-8 flex-col md:flex-row md:justify-between">
+              <div className="w-full lg:text-2xl font-bold lg:mt-10 mt-5">
                 <h1 className="w-full md:w-2/3">{t('footer.logo_title')}</h1>
               </div>
 
               {/*social media*/}
               <div className="w-44 pt-6 md:pt-0">
-                <div className="flex  space-x-4 sm:justify-center">
+                <div className="flex space-x-4 sm:justify-center lg:my-4 my-3">
                   <a href="#"
                      className="group w-9 h-9 rounded-full border text-white flex justify-center items-center transition-all duration-500">
                     <svg className="text-white transition-all duration-500"
@@ -64,13 +64,13 @@ export const Footer = () => {
                 {/*contact button*/}
                 <Link to="#contact">
                   <Button
-                    className="bg-cyan-600 text-white font-bold border-1 border-cyan-600 rounded-full w-[190px] mt-7"
+                    className="bg-cyan-600 text-white font-bold border-1 border-cyan-600 lg:rounded-full rounded-sm w-[190px] lg:mt-7 mt-5"
                     size="lg"> {t('footer.button')} </Button>
                 </Link>
               </div>
             </div>
             <div className="flex flex-col">
-              <div className="flex mt-24 mb-12 flex-row justify-center gap-5 sm:gap-20">
+              <div className="flex lg:mt-24 mt-10 lg:mb-12 mb-5 flex-row lg:justify-center justify-start gap-5 sm:gap-20">
                 <Link to="/" onClick={TopScroll}
                       className="cursor-pointer text-gray-600 hover:text-white font-bold uppercase">
                   {t('Navbar.home')}
@@ -87,7 +87,7 @@ export const Footer = () => {
               </div>
 
               <hr className="border-gray-600"/>
-              <p className="w-full text-center mt-12 text-gray-600">Copyright © 2024 PUN All rights reserved.</p>
+              <p className="w-full lg:text-center text-start lg:mt-12 mt-5 text-gray-600">Copyright © 2024 PUN All rights reserved.</p>
             </div>
           </div>
         </div>
