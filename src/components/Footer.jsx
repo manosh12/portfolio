@@ -87,7 +87,7 @@ export const Footer = () => {
               </div>
 
               <hr className="border-gray-600"/>
-              <p className="w-full text-center mt-12 text-gray-600">Copyright © 2020 Besnik Creative</p>
+              <p className="w-full text-center mt-12 text-gray-600">Copyright © 2024 PUN All rights reserved.</p>
             </div>
           </div>
         </div>

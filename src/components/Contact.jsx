@@ -1,5 +1,5 @@
 import {FaLocationDot, FaPhoneFlip} from "react-icons/fa6";
-import {FaFax, FaMailBulk} from "react-icons/fa";
+import {FaMailBulk} from "react-icons/fa";
 import React from "react";
 import { useTranslation } from 'react-i18next';
 import {Fade} from "react-awesome-reveal";
@@ -42,7 +42,7 @@ export const Contact = () => {
                     </div>
                     <div className="pt-7 lg:text-left text-center">
                       <h4 className="text-lg font-bold">{t('contact.phone')}</h4>
-                      <h5 className="mt-2"> 092（409）4949 </h5>
+                      <h5 className="mt-2"> 080（9459）8495 </h5>
                     </div>
                   </div>
                 </div>
@@ -55,7 +55,7 @@ export const Contact = () => {
                     </div>
                     <div className="pt-7 lg:text-left text-center">
                       <h4 className="text-lg font-bold">{t('contact.email')}</h4>
-                      <h5 className="mt-2"> example@thc.jpn.com </h5>
+                      <h5 className="mt-2"> coderexplorer21@gmail.com </h5>
                     </div>
                   </div>
                 </div>
