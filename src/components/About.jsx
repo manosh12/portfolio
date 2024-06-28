@@ -178,10 +178,13 @@ export const About = () => {
 
         {/*Collage History*/}
         <div className="container mx-auto max-w-5xl py-20 text-gray-600 lg:mt-7 mt-5">
-          <Title title={t('collage_background.title')} />
+          <Title title={t('collage_background.title')}/>
           <h4 className="text-center text-lg mt-5">{t('collage_background.collage')}</h4>
           <h4 className="text-center text-lg">{t('collage_background.graduated')}</h4>
-          <h4 className="font-bold text-lg uppercase mx-5 mt-10 lg:text-start text-center">{t('collage_background.programing')}</h4>
+          <h4
+            className="font-bold text-xl mx-5 mt-7 lg:text-start text-center">{t('collage_background.learned_language')}</h4>
+          <h4
+            className="font-bold text-sm uppercase mx-5 mt-10 lg:text-start text-center">{t('collage_background.programing')}</h4>
           <div className="grid grid-cols-2 lg:grid-cols-4 mt-5 gap-5 mx-5">
             {collageLearnedLanguage.map((contentList, index) => (
               <Fade
@@ -204,7 +207,8 @@ export const About = () => {
             ))}
           </div>
 
-          <h4 className="font-bold text-lg uppercase mx-5 mt-10 lg:text-start text-center">{t('collage_background.other')}</h4>
+          <h4
+            className="font-bold text-sm uppercase mx-5 mt-10 lg:text-start text-center">{t('collage_background.other')}</h4>
           <div className="grid grid-cols-2 lg:grid-cols-4 mt-5 gap-5 mx-5">
             {other.map((contentList, index) => (
               <Fade

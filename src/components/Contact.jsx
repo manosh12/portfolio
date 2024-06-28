@@ -16,7 +16,7 @@ export const Contact = () => {
         <div className="container mx-auto max-w-5xl lg:mt-7">
           <Title title={t('contact.title')} />
           <div className="mt-10">
-            <div className="bg-[#f0f5f7] py-10 text-gray-600 text-center px-5 rounded-md">{t('contact.description')}</div>
+            <div className="bg-[#f0f5f7] py-10 text-gray-600 text-center px-10 rounded-md text-sm">{t('contact.description')}</div>
           </div>
             <div className="text-center mt-10">
               <div className="grid sm:grid-cols-3 lg:gap-10 gap-5 mx-5 mt-10">

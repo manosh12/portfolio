@@ -75,7 +75,7 @@ export const Home = () => {
               <Link to="#contact" className="flex lg:justify-start justify-center">
                 <Button variant="bordered" radius="none"
                         className="bg-cyan-600 text-white font-bold border-1 border-cyan-600 rounded-full w-[200px]"
-                        size="lg">{t('main.button')}
+                        size="lg">{t('contact.title')}
                 </Button>
               </Link>
             </Fade>
@@ -91,9 +91,9 @@ export const Home = () => {
               <div className="flex justify-center items-center">
                 <h4 className="font-bold text-lg mt-7 text-gray-600">{t('weDo.system')}</h4>
                 <div className="flex flex-col gap-2">
-                  <a href="#" aria-label="Open Modal 1" onClick={systemModel} className="max-w-fit border-0">
-                    <FaArrowRightLong className="mx-3 mt-7 text-xl text-cyan-600" />
-                  </a>
+                 <div role="button" aria-label="Open Modal 1" onClick={systemModel} className="max-w-fit border-0">
+                    <FaArrowRightLong className="mx-3 mt-7 text-xl text-cyan-600"/>
+                  </div>
                 </div>
               </div>
             </div>
@@ -107,9 +107,9 @@ export const Home = () => {
               <div className="flex justify-center items-center">
                 <h4 className="font-bold text-lg mt-7 text-gray-600">{t('weDo.site')}</h4>
                 <div className="flex flex-col gap-2">
-                  <a href="#" aria-label="Open Modal 2" onClick={siteModel} className="max-w-fit border-0">
+                  <div role="button" aria-label="Open Modal 2" onClick={siteModel} className="max-w-fit border-0">
                     <FaArrowRightLong className="mx-3 mt-7 text-xl text-cyan-600"/>
-                  </a>
+                  </div>
                 </div>
                 <div
                   className="absolute h-full border-l border-cyan-600 left-0 top-0 transform -translate-x-1/2 hidden lg:block md:block"></div>

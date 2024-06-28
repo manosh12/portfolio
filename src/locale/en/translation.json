@@ -9,8 +9,7 @@
   "main": {
     "title": "HI, I'M MANOSH PUN",
     "description": "I am a WEB DEVELOPER.",
-    "sub_description": "I have four years of experience as a web developer.",
-    "button": "CONTACT ME"
+    "sub_description": "I have four years of experience as a web developer."
   },
 
 
@@ -49,13 +48,14 @@
     "title": "COLLEGE HISTORY",
     "collage": "Kyushu Eisu Senmon Gakko (IT-Web course)",
     "graduated": "March 2020 (Graduation)",
+    "learned_language": "Things I learned at vocational school",
     "programing": "Programing Language",
     "other": "Other"
   },
 
   "contact": {
-    "title" : "CONTACT US",
-    "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. If you have any questions, need more information about my work, or want to collaborate, feel free to reach out.",
+    "title" : "CONTACT",
+    "description": "I'm always open to discussing new projects with innovative ideas which may help to fulfil your vision. If you have any questions, need more information about my work, or want to collaborate, please feel free to reach out.",
     "phone": "PHONE",
     "address_title": "ADDRESS",
     "address": "Fukuoka 2-chome, Chuo-ku, Fukuoka City",

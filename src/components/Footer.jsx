@@ -65,7 +65,7 @@ export const Footer = () => {
                 <Link to="#contact">
                   <Button
                     className="bg-cyan-600 text-white font-bold border-1 border-cyan-600 lg:rounded-full rounded-sm w-[190px] lg:mt-7 mt-5"
-                    size="lg"> {t('footer.button')} </Button>
+                    size="lg"> {t('contact.title')} </Button>
                 </Link>
               </div>
             </div>
