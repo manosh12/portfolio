@@ -91,11 +91,11 @@ export const Header = () => {
                   🇯🇵 JP
                 </div>
               </DropdownItem>
-              <DropdownItem key="np">
-                <div className="flex items-center">
-                  🇳🇵 NPL
-                </div>
-              </DropdownItem>
+              {/*<DropdownItem key="np">*/}
+              {/*  <div className="flex items-center">*/}
+              {/*    🇳🇵 NPL*/}
+              {/*  </div>*/}
+              {/*</DropdownItem>*/}
             </DropdownMenu>
           </Dropdown>
         </NavbarContent>

@@ -27,13 +27,13 @@ export const About = () => {
             </div>
 
             <div className="mx-2">
+              <Fade direction={"down"}>
+                <div className="text-gray-600 font-bold">INTRODUCTION</div>
+              </Fade>
               <div className="lg:mt-5">
                 <h1 className="text-md text-gray-600">
                   {t('about.description')}
                   <p className="my-5">{t('about.second_description')}</p>
-                  <Fade direction={"right"}>
-                    <p className="lg:mt-5 text-lg font-bold float-end">{t('about.name')}</p>
-                  </Fade>
                 </h1>
               </div>
             </div>
@@ -166,7 +166,7 @@ export const About = () => {
                           value: "text-foreground/60"
                         }}
                         label="Server"
-                        value={50}
+                        value={40}
                         showValueLabel={true}
               />
             </div>

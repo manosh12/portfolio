@@ -16,7 +16,10 @@
 
   "weDo": {
     "system": "Web System Developement",
+    "system_description": "The TEAM support system is designed to evaluate and reward contributions when someone shares knowledge or information with others, recording these contributions as points in a history. This system aims to improve interpersonal relationships.",
     "site": "Web Site Developement",
+    "site_description": "I'm also interested in website creation, so I created a website like the one below.",
+    "button": "Close",
     "server": "Server Construction"
   },
 
@@ -52,7 +55,7 @@
 
   "contact": {
     "title" : "CONTACT US",
-    "description": "I am currently open to new opportunities and collaborations. Let's connect to discuss how my skills and experience can contribute to your projects.",
+    "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. If you have any questions, need more information about my work, or want to collaborate, feel free to reach out.",
     "phone": "PHONE",
     "address_title": "ADDRESS",
     "address": "Fukuoka 2-chome, Chuo-ku, Fukuoka City",
@@ -60,7 +63,7 @@
   },
 
   "footer": {
-    "logo_title": "How can we help you. get in touch",
+    "logo_title": "How can i help you. get in touch",
     "button": "CONTACT US"
   },
 
