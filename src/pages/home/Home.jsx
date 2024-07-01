@@ -106,7 +106,7 @@ export const Home = () => {
               </div>
               <div className="flex justify-center items-center">
                 <h4 className="font-bold text-lg mt-7 text-gray-600">{t('weDo.site')}</h4>
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-3">
                   <div role="button" aria-label="Open Modal 2" onClick={siteModel} className="max-w-fit border-0">
                     <FaArrowRightLong className="mx-3 mt-7 text-xl text-cyan-600"/>
                   </div>
