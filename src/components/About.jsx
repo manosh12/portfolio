@@ -19,7 +19,7 @@ export const About = () => {
           </div>
 
           {/*紹介 */}
-          <div className="grid sm:grid-cols-2 gap-20 mx-5 mt-20">
+          <div className="grid sm:grid-cols-2 gap-20 mx-6 mt-20">
             <div className="lg:mt-1">
               <div className="order-1 sm:order-2 flex justify-center items-center sm:mt-0">
                 <img src="/images/bg_hero.jpg" alt="business-exchange" className="w-full sm:w-auto"/>
