@@ -1,10 +1,10 @@
 import data from "../data.json"
 
 function Hero({ isLoaded, scrollToSection }) {
-   const stats = data.stats;
+  const stats = data.stats;
 
   return (
-    <section id="home" className="flex items-center justify-center lg:py-32 py-14">
+    <section id="home" className="flex items-center justify-center lg:py-20 py-14">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <div className="space-y-10">
           {/* Main Heading */}
