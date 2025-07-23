@@ -7,7 +7,7 @@ function Hero({ isLoaded, scrollToSection }) {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center lg:pt-12">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <div className="space-y-8">
+        <div className="space-y-10">
           {/* Main Heading */}
           <div className="space-y-4 lg:mt-10">
             <h1 className="text-4xl md:text-7xl font-light tracking-tight">
@@ -27,7 +27,7 @@ function Hero({ isLoaded, scrollToSection }) {
             }`}>
               <div className="h-px bg-gray-300 w-16"></div>
               <p className="text-xl md:text-2xl text-gray-600 font-light tracking-wide">
-                Full-Stack Developer
+                Developer
               </p>
               <div className="h-px bg-gray-300 w-16"></div>
             </div>

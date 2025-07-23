@@ -1,7 +1,10 @@
 import {
   FaJs, FaReact, FaHtml5, FaCss3Alt, FaPhp,
   FaAws, FaDatabase, FaGithub, FaGitlab,
-  FaCode, FaServer, FaEye, FaTools
+  FaCode, FaServer, FaEye, FaTools,
+  FaLaravel,
+  FaLinux,
+  FaSourcetree
 } from 'react-icons/fa';
 import { SiVuedotjs, SiTailwindcss, SiBootstrap, SiDjango, SiPostgresql } from 'react-icons/si';
 import data from '../data.json'
@@ -25,17 +28,20 @@ function Skills({ visibleElements }) {
     aws: <FaAws />,
     mysql: <FaDatabase />,
     postgresql: <SiPostgresql />,
+    laravel: <FaLaravel />,
+    linux : <FaLinux />,
 
     devops: <FaTools />,
     github: <FaGithub />,
     gitlab: <FaGitlab />,
     code: <FaCode />,
     server: <FaServer />,
-    eye: <FaEye />,
+    sourcetree : <FaSourcetree />,
+    postman: <FaServer />,
   };
 
   return (
-    <section id="skills" className="lg:pt-20 sm:pt-12">
+    <section id="skills" className="lg:py-20 sm:pt-12">
       <div className="max-w-6xl mx-auto px-6">
         <div className={`text-center mb-16 animate-on-scroll ${
           visibleElements.has('skills') ? 'animate' : ''
@@ -50,11 +56,13 @@ function Skills({ visibleElements }) {
         <div className="grid md:grid-cols-3 gap-8">
           {skillCategories.map((category) => (
             <div
-              key={category.title}
-              className={`bg-white p-6 pb-12 rounded-2xl border border-gray-200 hover:shadow-lg hover-lift transition-all duration-500 animate-on-scroll ${
-                visibleElements.has('skills') ? 'animate' : ''
-              }`}
-            >
+                key={category.id}
+                className={`
+                  bg-white p-6 pb-6 rounded-2xl border border-gray-200 hover:shadow-lg hover-lift transition-all duration-500 animate-on-scroll
+                  ${visibleElements.has('skills') ? 'animate' : ''}
+                  ${category.id == 2 ? 'shadow-lg' : ''}
+                `}
+              >
               <div className='mb-6 flex flex-row items-center gap-2 lg:flex-col lg:items-start lg:gap-0'>
                 <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center hover-scale hover-rotate text-2xl">
                     {iconMap[category.icon]}
@@ -65,7 +73,7 @@ function Skills({ visibleElements }) {
                 {category.skills.map((skill) => (
                   <div key={skill.name} className={`flex justify-between items-center" ${
                         visibleElements.has('skills') ? 'animate-slideInLeft' : 'opacity-0 -translate-x-4'
-                      }`} style={{ animationDelay: '800ms', animationFillMode: 'forwards' }}>
+                      }`}>
                     <div className="flex items-center gap-2 text-gray-700">
                       <span className="text-gray-500">{iconMap[skill.icon]}</span>
                       {skill.name}

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { FaGithub } from 'react-icons/fa';
 import { MenuIcon, CloseIcon } from "./Icons"
 import data from "../data.json"
 
@@ -32,8 +33,8 @@ function Navigation({ activeSection, scrollToSection }) {
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center hover-scale">
-                <span className="text-white font-bold text-sm">PM</span>
+              <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center hover-scale">
+                <img src="./images/logo.png" alt="logo" className="w-5 h-5" />
               </div>
               <span className="font-bold text-lg">MANOSH</span>
             </div>
@@ -49,6 +50,16 @@ function Navigation({ activeSection, scrollToSection }) {
                   {item.name}
                 </button>
               ))}
+              <a href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 rounded-lg flex items-center justify-center hover:text-white bg-black text-white transition-all duration-300 hover-scale group"
+                  title="GitHub"
+                >
+                  <div className="group-hover:scale-110 transition-transform duration-300">
+                    <FaGithub />
+                  </div>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -84,23 +95,23 @@ function Navigation({ activeSection, scrollToSection }) {
           <div className="flex items-center justify-between p-6 border-b border-gray-100">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center">
-                <span className="text-white font-bold">AC</span>
+                <img src="./images/logo.png" alt="logo" className="w-5 h-5" />
               </div>
               <div>
-                <div className="font-bold text-lg">Alex Chen</div>
+                <div className="font-bold">MANOSH</div>
               </div>
             </div>
             <div className="" onClick={() => setIsMenuOpen(false)}><CloseIcon /></div>
           </div>
 
           {/* Menu Items */}
-          <div className="px-6 py-8">
-            <nav className="space-y-0.5">
+          <div className="px-6">
+            <nav>
               {quickLinks.map((item, index) => (
                 <button
                   key={item.name}
                   onClick={() => handleScrollToSection(item.href)}
-                  className={`group w-full text-left px-4 py-4 rounded-xl hover:bg-gray-50 transition-all duration-300 flex items-center justify-between ${
+                  className={`group w-full text-left px-4 py-3 rounded-xl hover:bg-gray-100 transition-all duration-300 flex items-center justify-between ${
                     isMenuOpen ? 'animate-slideInRight' : 'opacity-0'
                   }`}>
                   <div className="flex items-center space-x-4">
@@ -122,7 +133,7 @@ function Navigation({ activeSection, scrollToSection }) {
               {/* Contact Info */}
               <div className="text-center">
                 <p className="text-sm text-gray-500 mb-2">Get in touch</p>
-                <p className="text-sm font-medium text-black">codeexplorer@gmail.com</p>
+                <p className="text-sm font-medium text-black">coderexplorer@gmail.com</p>
               </div>
 
               {/* Social Links */}

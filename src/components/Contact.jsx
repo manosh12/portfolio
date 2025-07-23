@@ -14,7 +14,7 @@ function Contact({ visibleElements }) {
   }
 
   return (
-    <section id="contact" className="lg:pt-20 lg:pb-32 sm:pt-12">
+    <section id="contact" className="py-16">
       <div className="max-w-6xl mx-auto px-6">
         <div className={`text-center mb-16 animate-on-scroll ${
           visibleElements.has('contact') ? 'animate' : ''
@@ -71,7 +71,7 @@ function Contact({ visibleElements }) {
           </div>
 
           {/* Contact Form */}
-          <div className={`bg-white p-4 rounded-2xl border border-gray-100 shadow-lg hover-lift animate-on-scroll ${
+          <div className={`bg-white p-4 py-10 rounded-2xl border border-gray-100 shadow-lg hover-lift animate-on-scroll ${
             visibleElements.has('contact') ? 'animate' : ''
           }`}>
             <h3 className="text-2xl font-light mb-6">Send me a message</h3>
@@ -101,7 +101,7 @@ function Contact({ visibleElements }) {
                 <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
                 <textarea
                   required
-                  rows={5}
+                  rows={3}
                   className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all duration-300 resize-none hover:border-gray-300"
                   placeholder="Tell me about your project..."
                 />

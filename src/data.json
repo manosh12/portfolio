@@ -30,7 +30,7 @@
     ],
 
     "contactInfo": [
-        { "icon": "mail", "label": "Email", "value": "coderexplorer21@email.com" },
+        { "icon": "mail", "label": "Email", "value": "coderexplorer21@gmail.com" },
         { "icon": "phone", "label": "Phone", "value": "+1 (555) 123-4567" },
         { "icon": "location", "label": "Location", "value": "Fukuoka, Japan" }
     ],
@@ -38,44 +38,47 @@
     "quickLinks": [
         { "name": "Home", "href": "home" },
         { "name": "About", "href": "about" },
-        { "name": "Education", "href": "education" },
-        { "name": "Skills", "href": "skills" },
         { "name": "Contact", "href": "contact" }
     ],
 
     "skillCategories": [
     {
-      "title": "Frontend Development",
+      "id": 1,
+      "title": "Frontend",
       "icon": "frontend",
       "skills": [
         { "name": "JavaScript ES6+", "icon": "js" },
         { "name": "React", "icon": "react" },
         { "name": "Vue.js", "icon": "vue" },
         { "name": "HTML", "icon": "html" },
+        { "name": "CSS3", "icon": "css" },
         { "name": "Bootstrap", "icon": "bootstrap" },
-        { "name": "Tailwind CSS", "icon": "tailwind" },
-        { "name": "CSS3", "icon": "css" }
+        { "name": "Tailwind CSS", "icon": "tailwind" }
       ]
     },
     {
-      "title": "Backend & Cloud",
+      "id": 2,
+      "title": "Backend & Server",
       "icon": "backend",
       "skills": [
-        { "name": "PHP/Laravel/CakePHP", "icon": "php" },
+        { "name": "PHP", "icon": "php" },
+        { "name": "Laravel", "icon": "laravel" },
         { "name": "Django", "icon": "django" },
-        { "name": "AWS", "icon": "aws" },
         { "name": "MySQL", "icon": "mysql" },
-        { "name": "PostgreSQL", "icon": "postgresql" }
+        { "name": "PostgreSQL", "icon": "postgresql" },
+        { "name": "Linux", "icon": "linux" }
       ]
     },
     {
+      "id": 3,
       "title": "Tools & DevOps",
       "icon": "devops",
       "skills": [
         { "name": "GitHub", "icon": "github" },
         { "name": "GitLab", "icon": "gitlab" },
         { "name": "VsCode", "icon": "code" },
-        { "name": "Monitoring", "icon": "eye" }
+        { "name": "Postman", "icon": "postman" },
+        { "name": "SourceTree", "icon": "sourcetree" }
       ]
     }
   ]

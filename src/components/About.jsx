@@ -1,6 +1,6 @@
-function About({ visibleElements }) {
+function About({isLoaded, visibleElements }) {
   return (
-    <section id="about" className="lg:pt-20 sm:pt-12 bg-gray-50">
+    <section id="about" className="lg:py-20 py-12 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className={`space-y-6 animate-on-scroll ${
@@ -28,7 +28,7 @@ function About({ visibleElements }) {
           </div>
 
           {/* Updated Professional Portrait to match third image design */}
-          <div className={`relative animate-on-scroll ${
+          <div className={`relative animate-on-scroll px-3 ${
             visibleElements.has('about') ? 'animate' : ''
           }`} style={{ animationDelay: '200ms' }}>
 
@@ -51,16 +51,16 @@ function About({ visibleElements }) {
               </div>
 
               {/* Decorative Elements - matching the image design */}
-              <div className={`absolute -top-6 -right-6 w-24 h-24 border-2 border-gray-300 rounded-3xl rotate-12 hover:rotate-6 transition-all duration-700 ${
+              <div className={`absolute -top-6 -right-6 w-24 h-24 border-2 border-gray-300 rounded-3xl rotate-12 hover:rotate-6 transition-all duration-700 animate-float ${
                 visibleElements.has('about') ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
               }`} style={{ transitionDelay: '200ms' }} />
 
-              <div className={`absolute -bottom-6 -left-6 w-20 h-20 bg-black rounded-2xl hover:scale-110 hover:rotate-12 transition-all duration-700 ${
+              <div className={`absolute -bottom-6 -left-6 w-20 h-20 bg-gray-900 rounded-2xl hover:scale-110 hover:rotate-12 transition-all duration-700 animate-float ${
                 visibleElements.has('about') ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
-              }`} style={{ transitionDelay: '400ms' }} />
+              }`}/>
 
               {/* Code Icon - matching the design */}
-              <div className={`absolute top-1/2 -right-4 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 hover:-translate-y-2 transition-all duration-500 ${
+              <div className={`absolute top-1/2 -right-4 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:scale-110 hover:-translate-y-2 transition-all duration-500 animate-float ${
                 visibleElements.has('about') ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
               }`} style={{ transitionDelay: '600ms' }}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-gray-600">
