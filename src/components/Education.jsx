@@ -1,24 +1,9 @@
-import {
-  FaCheckCircle, FaCheckSquare
-} from 'react-icons/fa';
+import {FaRegCheckSquare} from 'react-icons/fa';
+import data from '../data.json'
 
 function Education({ visibleElements }) {
-  const education = {
-    school: "Kyushu Eisugakukan",
-    course: "IT-Web Course",
-    period: "April 2018 - April 2020",
-    location: "Japan",
-    subjects: [
-      {
-        category: "Web Programming",
-        skills: ["PHP", "JavaScript", "HTML", "CSS"]
-      },
-      {
-        category: "Web Design",
-        skills: ["Photoshop", "Illustrator", "Excel", "Word"]
-      }
-    ]
-  }
+  const education = data.education;
+  const timeline = data.timeline;
 
   return (
     <section id="education" className="lg:py-20 py-12 bg-white">
@@ -66,7 +51,7 @@ function Education({ visibleElements }) {
             </div>
 
             {/* Subjects Grid */}
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 lg:gap-8 gap-4">
               {education.subjects.map((subject, index) => (
                 <div
                   key={subject.category}
@@ -92,7 +77,7 @@ function Education({ visibleElements }) {
                     <h4 className="text-lg font-semibold text-black lg:mt-3">{subject.category}</h4>
                 </div>
 
-                  <div className="space-y-3">
+                  <div className="lg:space-y-3 space-y-2">
                     {subject.skills.map((skill, skillIndex) => (
                       <div
                         key={skill}
@@ -101,7 +86,7 @@ function Education({ visibleElements }) {
                         }`} style={{ animationDelay: '800ms', animationFillMode: 'forwards' }}>
                         <span className="text-gray-700 font-medium">{skill}</span>
                         <div>
-                            <FaCheckSquare className="text-gray-700 w-5 h-5" />
+                          <FaRegCheckSquare className="text-gray-700 w-5 h-5" />
                         </div>
                       </div>
                     ))}
@@ -113,50 +98,46 @@ function Education({ visibleElements }) {
         </div>
       </div>
 
-    {/* Timeline */}
-    <div className={`bg-gray-50 w-full lg:mt-20 mt-10 py-20 animate-on-scroll ${
-    visibleElements.has('education') ? 'animate' : ''
-    }`}>
-        <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gray-200 rounded-full"></div>
+      {/* Timeline */}
+      <div className={`bg-gray-50 w-full lg:mt-20 mt-10 lg:py-20 py-10 px-2 animate-on-scroll ${
+      visibleElements.has('education') ? 'animate' : ''
+      }`}>
+          <div className="relative">
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gray-200 rounded-full"></div>
 
-            <div className="space-y-12 sm:px-2">
-            {[
-                { year: "2018", title: "Started IT-Web Course", description: "Began comprehensive web development program" },
-                { year: "2019", title: "Advanced Programming", description: "Mastered PHP, JavaScript, and modern web technologies" },
-                { year: "2020", title: "Graduation", description: "Completed course with strong foundation in web development" }
-            ].map((milestone, index) => (
-                <div key={milestone.year} className="relative flex items-center">
-                <div className="flex-1 text-right pr-8">
-                    {index % 2 === 0 && (
-                    <div className={`animate-on-scroll ${
-                        visibleElements.has('education') ? 'animate' : ''
-                    }`}>
-                        <h4 className="text-xl font-semibold text-black">{milestone.title}</h4>
-                        <p className="text-gray-600">{milestone.description}</p>
-                    </div>
-                    )}
-                </div>
+              <div className="space-y-12">
+              {timeline.map((milestone, index) => (
+                  <div key={milestone.year} className="relative flex items-center">
+                  <div className="flex-1 text-right pr-8">
+                      {index % 2 === 0 && (
+                      <div className={`animate-on-scroll ${
+                          visibleElements.has('education') ? 'animate' : ''
+                      }`}>
+                          <h4 className="text-xl font-semibold text-black">{milestone.title}</h4>
+                          <p className="text-gray-600">{milestone.description}</p>
+                      </div>
+                      )}
+                  </div>
 
-                <div className="relative z-10 w-12 h-12 bg-white border-4 border-black rounded-full flex items-center justify-center hover-scale">
-                    <span className="font-bold text-sm">{milestone.year}</span>
-                </div>
+                  <div className="relative z-10 w-12 h-12 bg-white border-4 border-black rounded-full flex items-center justify-center hover-scale">
+                      <span className="font-bold text-sm">{milestone.year}</span>
+                  </div>
 
-                <div className="flex-1 text-left pl-8">
-                    {index % 2 === 1 && (
-                    <div className={`animate-on-scroll ${
-                        visibleElements.has('education') ? 'animate' : ''
-                    }`}>
-                        <h4 className="text-xl font-semibold text-black">{milestone.title}</h4>
-                        <p className="text-gray-600">{milestone.description}</p>
-                    </div>
-                    )}
+                  <div className="flex-1 text-left pl-8">
+                      {index % 2 === 1 && (
+                      <div className={`animate-on-scroll ${
+                          visibleElements.has('education') ? 'animate' : ''
+                      }`}>
+                          <h4 className="text-xl font-semibold text-black">{milestone.title}</h4>
+                          <p className="text-gray-600">{milestone.description}</p>
+                      </div>
+                      )}
+                  </div>
                 </div>
-                </div>
-            ))}
-            </div>
-        </div>
-    </div>
+              ))}
+              </div>
+          </div>
+      </div>
     </section>
   )
 }

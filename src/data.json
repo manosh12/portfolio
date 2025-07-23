@@ -1,0 +1,82 @@
+{
+    "stats": [
+        { "number": "50+", "label": "Projects" },
+        { "number": "5+",  "label": "Years" },
+        { "number": "25+", "label": "Clients" },
+        { "number": "99%", "label": "Success" }
+    ],
+
+    "education": {
+        "school": "Kyushu Eisugakukan",
+        "course": "IT-Web Course",
+        "period": "April 2018 - April 2020",
+        "location": "Japan",
+        "subjects": [
+        {
+            "category": "Web Programming",
+            "skills": ["PHP", "JavaScript", "HTML", "CSS"]
+        },
+        {
+            "category": "Web Design",
+            "skills": ["Photoshop", "Illustrator", "PowerPoint", "Excel", "Word"]
+        }
+        ]
+    },
+
+    "timeline" : [
+        { "year": "2018", "title": "Started IT-Web Course", "description": "Began comprehensive web development program" },
+        { "year": "2019", "title": "Advanced Programming", "description": "Mastered PHP, JavaScript, and modern web technologies" },
+        { "year": "2020", "title": "Graduation", "description": "Completed course with strong foundation in web development" }
+    ],
+
+    "contactInfo": [
+        { "icon": "mail", "label": "Email", "value": "coderexplorer21@email.com" },
+        { "icon": "phone", "label": "Phone", "value": "+1 (555) 123-4567" },
+        { "icon": "location", "label": "Location", "value": "Fukuoka, Japan" }
+    ],
+
+    "quickLinks": [
+        { "name": "Home", "href": "home" },
+        { "name": "About", "href": "about" },
+        { "name": "Education", "href": "education" },
+        { "name": "Skills", "href": "skills" },
+        { "name": "Contact", "href": "contact" }
+    ],
+
+    "skillCategories": [
+    {
+      "title": "Frontend Development",
+      "icon": "frontend",
+      "skills": [
+        { "name": "JavaScript ES6+", "icon": "js" },
+        { "name": "React", "icon": "react" },
+        { "name": "Vue.js", "icon": "vue" },
+        { "name": "HTML", "icon": "html" },
+        { "name": "Bootstrap", "icon": "bootstrap" },
+        { "name": "Tailwind CSS", "icon": "tailwind" },
+        { "name": "CSS3", "icon": "css" }
+      ]
+    },
+    {
+      "title": "Backend & Cloud",
+      "icon": "backend",
+      "skills": [
+        { "name": "PHP/Laravel/CakePHP", "icon": "php" },
+        { "name": "Django", "icon": "django" },
+        { "name": "AWS", "icon": "aws" },
+        { "name": "MySQL", "icon": "mysql" },
+        { "name": "PostgreSQL", "icon": "postgresql" }
+      ]
+    },
+    {
+      "title": "Tools & DevOps",
+      "icon": "devops",
+      "skills": [
+        { "name": "GitHub", "icon": "github" },
+        { "name": "GitLab", "icon": "gitlab" },
+        { "name": "VsCode", "icon": "code" },
+        { "name": "Monitoring", "icon": "eye" }
+      ]
+    }
+  ]
+}

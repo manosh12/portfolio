@@ -1,51 +1,41 @@
 import {
-  FaJs, FaReact, FaHtml5, FaCss3Alt, FaPhp, FaPython,
-  FaAws, FaDatabase, FaGitAlt, FaGithub, FaGitlab,
-  FaCode, FaServer, FaEye, FaFlask
+  FaJs, FaReact, FaHtml5, FaCss3Alt, FaPhp,
+  FaAws, FaDatabase, FaGithub, FaGitlab,
+  FaCode, FaServer, FaEye, FaTools
 } from 'react-icons/fa';
 import { SiVuedotjs, SiTailwindcss, SiBootstrap, SiDjango, SiPostgresql } from 'react-icons/si';
+import data from '../data.json'
 
 function Skills({ visibleElements }) {
-  const skillCategories = [
-    {
-      title: "Frontend Development",
-      icon: <FaCode />,
-      skills: [
-        { name: "JavaScript ES6+", icon: <FaJs /> },
-        { name: "React", icon: <SiVuedotjs /> },
-        { name: "Vue.js", icon: <FaReact /> },
-        { name: "HTML", icon: <FaHtml5 /> },
-        { name: "Bootstrap", icon: <SiBootstrap /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss /> },
-        { name: "CSS3", icon: <FaCss3Alt /> },
-      ],
-    },
-    {
-      title: "Backend & Cloud",
-      icon: <FaServer />,
-      skills: [
-        { name: "PHP/Laravel/CakePHP", icon: <FaPhp /> },
-        { name: "Python/Django", icon: <><FaPython /> <SiDjango /></> },
-        { name: "AWS", icon: <FaAws /> },
-        { name: "MySQL", icon: <FaDatabase /> },
-        { name: "PostgreSQL", icon: <SiPostgresql /> },
-      ],
-    },
-    {
-      title: "Tools & DevOps",
-      icon: <FaGitAlt />,
-      skills: [
-        { name: "GitHub", icon: <FaGithub /> },
-        { name: "GitLab", icon: <FaGitlab /> },
-        { name: "VsCode", icon: <FaCode /> },
-        { name: "Monitoring", icon: <FaEye /> },
-        { name: "Testing", icon: <FaFlask /> },
-      ],
-    },
-  ];
+  const skillCategories = data.skillCategories;
+
+  const iconMap = {
+    frontend : <FaCode />,
+    js: <FaJs />,
+    react: <FaReact />,
+    vue: <SiVuedotjs />,
+    html: <FaHtml5 />,
+    css: <FaCss3Alt />,
+    tailwind: <SiTailwindcss />,
+    bootstrap: <SiBootstrap />,
+
+    backend : <FaServer />,
+    php: <FaPhp />,
+    django: <SiDjango />,
+    aws: <FaAws />,
+    mysql: <FaDatabase />,
+    postgresql: <SiPostgresql />,
+
+    devops: <FaTools />,
+    github: <FaGithub />,
+    gitlab: <FaGitlab />,
+    code: <FaCode />,
+    server: <FaServer />,
+    eye: <FaEye />,
+  };
 
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="lg:py-20">
       <div className="max-w-6xl mx-auto px-6">
         <div className={`text-center mb-16 animate-on-scroll ${
           visibleElements.has('skills') ? 'animate' : ''
@@ -67,7 +57,7 @@ function Skills({ visibleElements }) {
             >
               <div className='mb-6 flex flex-row items-center gap-2 lg:flex-col lg:items-start lg:gap-0'>
                 <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center hover-scale hover-rotate text-2xl">
-                    {category.icon}
+                    {iconMap[category.icon]}
                 </div>
                 <h3 className="text-xl font-semibold text-black lg:mt-4">{category.title}</h3>
               </div>
@@ -77,7 +67,7 @@ function Skills({ visibleElements }) {
                         visibleElements.has('skills') ? 'animate-slideInLeft' : 'opacity-0 -translate-x-4'
                       }`} style={{ animationDelay: '800ms', animationFillMode: 'forwards' }}>
                     <div className="flex items-center gap-2 text-gray-700">
-                      <span className="text-gray-500">{skill.icon}</span>
+                      <span className="text-gray-500">{iconMap[skill.icon]}</span>
                       {skill.name}
                     </div>
                   </div>

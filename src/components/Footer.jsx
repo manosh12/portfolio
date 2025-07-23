@@ -1,25 +1,12 @@
 import { MailIcon, PhoneIcon, LocationIcon } from "./Icons"
+import data from "../data.json"
 
 function Footer() {
-  const currentYear = new Date().getFullYear()
-
-  const quickLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Education", href: "#education" },
-    { name: "Skills", href: "#skills" },
-    { name: "Contact", href: "#contact" }
-  ]
-
-  const services = [
-    { name: "Web Development", href: "#" },
-    { name: "Design", href: "#" },
-    { name: "Server Construction", href: "#" }
-  ]
+  const quickLinks = data.quickLinks;
 
   const scrollToSection = (href) => {
-    if (href.startsWith('#')) {
-      const element = document.querySelector(href)
+    if (href) {
+      const element = document.querySelector(`#${href}`);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' })
       }
@@ -79,26 +66,6 @@ function Footer() {
                   >
                     <span className="text-sm">{link.name}</span>
                   </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div className="space-y-6">
-            <h3 className="text-lg font-semibold text-white relative">
-              Services
-              <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-white rounded-full"></div>
-            </h3>
-            <ul className="space-y-3">
-              {services.map((service, index) => (
-                <li key={service.name}>
-                  <a
-                    href={service.href}
-                    className="group flex items-center text-gray-300 hover:text-white transition-all duration-300 hover:translate-x-2"
-                  >
-                    <span className="text-sm">{service.name}</span>
-                  </a>
                 </li>
               ))}
             </ul>

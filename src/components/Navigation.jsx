@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react"
 import { MenuIcon, CloseIcon } from "./Icons"
+import data from "../data.json"
 
 function Navigation({ activeSection, scrollToSection }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const quickLinks = data.quickLinks;
 
   const handleScrollToSection = (sectionId) => {
+    console.log(sectionId)
     scrollToSection(sectionId)
     setIsMenuOpen(false)
   }
@@ -30,20 +33,20 @@ function Navigation({ activeSection, scrollToSection }) {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
               <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center hover-scale">
-                <span className="text-white font-bold text-sm">AC</span>
+                <span className="text-white font-bold text-sm">PM</span>
               </div>
-              <span className="font-bold text-lg">Alex Chen</span>
+              <span className="font-bold text-lg">MANOSH</span>
             </div>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
-              {["Home", "About", "Education", "Skills", "Contact"].map((item, index) => (
+              {quickLinks.map((item, index) => (
                 <button
-                  key={item}
-                  onClick={() => handleScrollToSection(item.toLowerCase())}
+                  key={item.name}
+                  onClick={() => handleScrollToSection(item.href.toLowerCase())}
                   className={`text-gray-600 hover:text-black transition-all duration-300 hover-lift animate-fadeIn`}
                 >
-                  {item}
+                  {item.name}
                 </button>
               ))}
             </div>
@@ -93,16 +96,16 @@ function Navigation({ activeSection, scrollToSection }) {
           {/* Menu Items */}
           <div className="px-6 py-8">
             <nav className="space-y-0.5">
-              {["Home", "About", "Education", "Skills", "Contact"].map((item, index) => (
+              {quickLinks.map((item, index) => (
                 <button
-                  key={item}
-                  onClick={() => handleScrollToSection(item.toLowerCase())}
+                  key={item.name}
+                  onClick={() => handleScrollToSection(item.href)}
                   className={`group w-full text-left px-4 py-4 rounded-xl hover:bg-gray-50 transition-all duration-300 flex items-center justify-between ${
                     isMenuOpen ? 'animate-slideInRight' : 'opacity-0'
                   }`}>
                   <div className="flex items-center space-x-4">
                     <span className="text-lg font-medium text-gray-600 group-hover:text-black transition-colors duration-300">
-                      {item}
+                      {item.name}
                     </span>
                   </div>
                   <span className="text-gray-400 group-hover:text-black group-hover:translate-x-1 transition-all duration-300">→</span>

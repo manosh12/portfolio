@@ -1,16 +1,17 @@
 import { MailIcon, PhoneIcon, LocationIcon, GithubIcon, LinkedinIcon } from "./Icons"
+import data from "../data.json"
 
 function Contact({ visibleElements }) {
+  const contactInfo = data.contactInfo;
+  const iconMap = {
+      mail: <MailIcon />,
+      phone: <PhoneIcon />,
+      location: <LocationIcon />
+  }
   const handleSubmit = (e) => {
     e.preventDefault()
     alert("Thank you for your message! I will get back to you soon.")
   }
-
-  const contactInfo = [
-    { icon: <MailIcon />, label: "Email", value: "coderexplorer21@email.com" },
-    { icon: <PhoneIcon />, label: "Phone", value: "+1 (555) 123-4567" },
-    { icon: <LocationIcon />, label: "Location", value: "福岡, 日本" },
-  ]
 
   return (
     <section id="contact" className="lg:py-20 py-12">
@@ -38,7 +39,7 @@ function Contact({ visibleElements }) {
                   visibleElements.has('contact') ? 'animate-slideInLeft' : 'opacity-0 -translate-x-8'
                 }`}>
                   <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center hover-scale hover-rotate">
-                    {contact.icon}
+                    {iconMap[contact.icon]}
                   </div>
                   <div>
                     <div className="font-semibold text-black">{contact.label}</div>
@@ -70,7 +71,7 @@ function Contact({ visibleElements }) {
           </div>
 
           {/* Contact Form */}
-          <div className={`bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover-lift animate-on-scroll ${
+          <div className={`bg-white p-4 rounded-2xl border border-gray-100 shadow-lg hover-lift animate-on-scroll ${
             visibleElements.has('contact') ? 'animate' : ''
           }`}>
             <h3 className="text-2xl font-light mb-6">Send me a message</h3>

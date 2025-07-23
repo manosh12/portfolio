@@ -1,6 +1,6 @@
 function About({ visibleElements }) {
   return (
-    <section id="about" className="lg:py-20 py-12 bg-gray-50">
+    <section id="about" className="lg:py-20 py-6 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className={`space-y-6 animate-on-scroll ${
