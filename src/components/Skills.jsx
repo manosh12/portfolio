@@ -35,7 +35,7 @@ function Skills({ visibleElements }) {
   };
 
   return (
-    <section id="skills" className="lg:py-20">
+    <section id="skills" className="lg:pt-20 sm:pt-12">
       <div className="max-w-6xl mx-auto px-6">
         <div className={`text-center mb-16 animate-on-scroll ${
           visibleElements.has('skills') ? 'animate' : ''

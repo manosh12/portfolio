@@ -14,7 +14,7 @@
         "subjects": [
         {
             "category": "Web Programming",
-            "skills": ["PHP", "JavaScript", "HTML", "CSS"]
+            "skills": ["PHP", "JavaScript", "HTML", "CSS", "Bootstrap"]
         },
         {
             "category": "Web Design",

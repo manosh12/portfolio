@@ -14,19 +14,23 @@ function Hero({ isLoaded, scrollToSection }) {
               <span className={`block text-gray-400 transition-all duration-700 ${
                 isLoaded ? 'animate-slideInLeft' : 'opacity-0 -translate-x-12'
               }`}>
-                Pun
+                Digital
               </span>
               <span className={`block font-black text-black transition-all duration-700 ${
                 isLoaded ? 'animate-slideInRight' : 'opacity-0 translate-x-12'
               }`}>
-                Manosh
+                Solutions
               </span>
             </h1>
-            <p className={`text-xl md:text-2xl text-gray-600 font-light transition-all duration-700 ${
+            <div className={`flex items-center justify-center space-x-4 transition-all duration-700 ${
               isLoaded ? 'animate-fadeInUp' : 'opacity-0 translate-y-8'
             }`}>
-              Full-Stack Developer
-            </p>
+              <div className="h-px bg-gray-300 w-16"></div>
+              <p className="text-xl md:text-2xl text-gray-600 font-light tracking-wide">
+                Full-Stack Developer
+              </p>
+              <div className="h-px bg-gray-300 w-16"></div>
+            </div>
           </div>
 
           <p className={`text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed transition-all duration-700 ${

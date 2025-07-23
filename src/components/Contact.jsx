@@ -14,7 +14,7 @@ function Contact({ visibleElements }) {
   }
 
   return (
-    <section id="contact" className="lg:py-20 py-12">
+    <section id="contact" className="lg:pt-20 lg:pb-32 sm:pt-12">
       <div className="max-w-6xl mx-auto px-6">
         <div className={`text-center mb-16 animate-on-scroll ${
           visibleElements.has('contact') ? 'animate' : ''

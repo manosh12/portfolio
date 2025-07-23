@@ -6,7 +6,7 @@ function Education({ visibleElements }) {
   const timeline = data.timeline;
 
   return (
-    <section id="education" className="lg:py-20 py-12 bg-white">
+    <section id="education" className="lg:pt-32 sm:pt-12 bg-white">
       <div className="lg:px-6">
         <div className={`text-center mb-16 animate-on-scroll ${
           visibleElements.has('education') ? 'animate' : ''
