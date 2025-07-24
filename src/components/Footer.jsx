@@ -1,4 +1,5 @@
-import { MailIcon, PhoneIcon, LocationIcon } from "./Icons"
+import { FaEnvelopeSquare, FaPhoneSquare } from 'react-icons/fa';
+import { FaLocationDot } from "react-icons/fa6";
 import data from "../data.json"
 
 function Footer() {
@@ -61,15 +62,15 @@ function Footer() {
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors duration-300">
-                <MailIcon/>
+                <FaEnvelopeSquare />
                 <span className="text-sm">coderexplorer21@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors duration-300">
-                <PhoneIcon />
+                <FaPhoneSquare />
                 <span className="text-sm">+1 (555) 123-4567</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors duration-300">
-                <LocationIcon />
+                <FaLocationDot />
                 <span className="text-sm">Fukuoka, Japan</span>
               </div>
             </div>

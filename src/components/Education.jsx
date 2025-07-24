@@ -1,5 +1,6 @@
-import {FaRegCheckSquare} from 'react-icons/fa';
+import {FaAddressCard, FaCode, FaRegCalendarCheck, FaRegCheckSquare} from 'react-icons/fa';
 import data from '../data.json'
+import { FaComputer } from 'react-icons/fa6';
 
 function Education({ visibleElements }) {
   const education = data.education;
@@ -32,19 +33,11 @@ function Education({ visibleElements }) {
               <p className="text-xl text-gray-600 font-medium">{education.course}</p>
               <div className="flex items-center justify-center space-x-4 mt-4">
                 <div className="flex items-center text-gray-500">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="mr-2">
-                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                    <line x1="16" y1="2" x2="16" y2="6"/>
-                    <line x1="8" y1="2" x2="8" y2="6"/>
-                    <line x1="3" y1="10" x2="21" y2="10"/>
-                  </svg>
+                  <FaRegCalendarCheck className="mr-2" />
                   <span className="text-sm font-medium">{education.period}</span>
                 </div>
                 <div className="flex items-center text-gray-500">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="mr-2">
-                    <path d="M20 10c0 6-10 12-10 12s-10-6-10-12a10 10 0 0 1 20 0Z"/>
-                    <circle cx="12" cy="10" r="3"/>
-                  </svg>
+                  <FaAddressCard className="mr-2" />
                   <span className="text-sm font-medium">{education.location}</span>
                 </div>
               </div>
@@ -61,17 +54,10 @@ function Education({ visibleElements }) {
                   <div className="mb-6 flex flex-row items-center gap-2 lg:flex-col lg:items-start lg:gap-0">
                     <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center hover-scale hover-rotate">
                         {index === 0 && (
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                            <polyline points="16 18 22 12 16 6"/>
-                            <polyline points="8 6 2 12 8 18"/>
-                        </svg>
+                           <FaCode className="text-gray-900 w-6 h-6" />
                         )}
                         {index === 1 && (
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                            <line x1="8" y1="21" x2="16" y2="21"/>
-                            <line x1="12" y1="17" x2="12" y2="21"/>
-                        </svg>
+                           <FaComputer className="text-gray-900 w-6 h-6" />
                         )}
                     </div>
                     <h4 className="text-lg font-semibold text-black lg:mt-3">{subject.category}</h4>

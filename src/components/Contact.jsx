@@ -1,12 +1,13 @@
-import { MailIcon, PhoneIcon, LocationIcon, GithubIcon, LinkedinIcon } from "./Icons"
+import { FaEnvelopeOpen, FaPhone } from 'react-icons/fa';
+import { FaGithub, FaLocationDot } from "react-icons/fa6";
 import data from "../data.json"
 
 function Contact({ visibleElements }) {
   const contactInfo = data.contactInfo;
   const iconMap = {
-      mail: <MailIcon />,
-      phone: <PhoneIcon />,
-      location: <LocationIcon />
+      mail: <FaEnvelopeOpen />,
+      phone: <FaPhone />,
+      location: <FaLocationDot />
   }
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -57,14 +58,7 @@ function Contact({ visibleElements }) {
                   className={`w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300 hover-scale hover-rotate ${
                     visibleElements.has('contact') ? 'animate-scaleIn' : 'opacity-0 scale-75'
                   }`}>
-                  <GithubIcon />
-                </a>
-                <a
-                  href="#"
-                  className={`w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300 hover-scale hover-rotate ${
-                    visibleElements.has('contact') ? 'animate-scaleIn' : 'opacity-0 scale-75'
-                  }`}>
-                  <LinkedinIcon />
+                  <FaGithub />
                 </a>
               </div>
             </div>

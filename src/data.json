@@ -1,8 +1,8 @@
 {
     "stats": [
-        { "number": "50+", "label": "Projects" },
-        { "number": "5+",  "label": "Years" },
-        { "number": "25+", "label": "Clients" },
+        { "number": "2+", "label": "Projects" },
+        { "number": "3+",  "label": "Years" },
+        { "number": "2+", "label": "Clients" },
         { "number": "99%", "label": "Success" }
     ],
 
@@ -14,7 +14,7 @@
         "subjects": [
         {
             "category": "Web Programming",
-            "skills": ["PHP", "JavaScript", "HTML", "CSS", "Bootstrap"]
+            "skills": ["PHP", "JavaScript", "HTML5", "CSS3", "Bootstrap"]
         },
         {
             "category": "Web Design",
@@ -50,7 +50,7 @@
         { "name": "JavaScript ES6+", "icon": "js" },
         { "name": "React", "icon": "react" },
         { "name": "Vue.js", "icon": "vue" },
-        { "name": "HTML", "icon": "html" },
+        { "name": "HTML5", "icon": "html" },
         { "name": "CSS3", "icon": "css" },
         { "name": "Bootstrap", "icon": "bootstrap" },
         { "name": "Tailwind CSS", "icon": "tailwind" }

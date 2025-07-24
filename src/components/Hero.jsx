@@ -36,7 +36,7 @@ function Hero({ isLoaded, scrollToSection }) {
             isLoaded ? 'animate-fadeInUp' : 'opacity-0 translate-y-8'
           }`}>
             I craft exceptional digital experiences through clean architecture and thoughtful design. Specializing in
-            modern web technologies with 5+ years of expertise.
+            modern web technologies with 3+ years of expertise.
           </p>
 
           {/* CTA Buttons */}
