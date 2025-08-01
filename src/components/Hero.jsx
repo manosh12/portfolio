@@ -4,9 +4,9 @@ function Hero({ isLoaded, scrollToSection }) {
   const stats = data.stats;
 
   return (
-    <section id="home" className="flex items-center justify-center lg:py-20 py-14">
+    <section id="home" className="flex items-center justify-center lg:py-20 py-8">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <div className="space-y-10">
+        <div className="lg:space-y-10 space-y-6">
           {/* Main Heading */}
           <div className="space-y-4 lg:mt-10">
             <h1 className="text-4xl md:text-7xl font-light tracking-tight">
@@ -52,7 +52,7 @@ function Hero({ isLoaded, scrollToSection }) {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-6 lg:pt-16 max-w-3xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-4 lg:pt-16 max-w-3xl mx-auto">
             {stats.map((stat, index) => (
               <div
                 key={stat.label}

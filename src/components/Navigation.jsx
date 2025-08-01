@@ -106,17 +106,17 @@ function Navigation({ activeSection, scrollToSection }) {
           </div>
 
           {/* Menu Items */}
-          <div className="px-6">
-            <nav>
+          <div className="px-6 mt-4">
+            <nav className="space-y-1">
               {quickLinks.map((item, index) => (
                 <button
                   key={item.name}
                   onClick={() => handleScrollToSection(item.href)}
-                  className={`group w-full text-left px-4 py-3 rounded-xl hover:bg-gray-100 transition-all duration-300 flex items-center justify-between ${
+                  className={`group w-full text-left px-4 py-3 hover:bg-gray-100 transition-all duration-300 flex items-center justify-between ${
                     isMenuOpen ? 'animate-slideInRight' : 'opacity-0'
                   }`}>
                   <div className="flex items-center space-x-4">
-                    <span className="text-lg font-medium text-gray-600 group-hover:text-black transition-colors duration-300">
+                    <span className="font-medium text-gray-600 group-hover:text-black transition-colors duration-300">
                       {item.name}
                     </span>
                   </div>
